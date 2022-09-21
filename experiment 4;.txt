@@ -1,0 +1,22 @@
+
+mysql> update shopping set price = 100 where items = 'food';
+Query OK, 1 row affected (0.06 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from shopping;
++-------+-------+-------+-------+---------+
+| piace | items | price | offer | payment |
++-------+-------+-------+-------+---------+
+| goa   | food  |   100 |     5 |      15 |
++-------+-------+-------+-------+---------+
+1 row in set (0.00 sec)
+mysql> delete from shopping where name;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+mysql> select * from college;
++-------+-------+--------+
+| place| items  | price | 
++-------+-------+--------+
+|  goa | food   | 10     |   
++-------+-------+--------+
+1 row in set (0.00 sec)
