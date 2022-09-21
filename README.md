@@ -6,4 +6,4 @@ DDL commands with constraints -(primary,foreign,unique,check) -(https://github.c
 ## EXPERIMENT 3;
 DML commands -(insert,select)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%203.txt)
 ## EXPERIMENT 4;
-DML commands -(update ,delete)-()
+DML commands -(update ,delete)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%204%3B.txt)
