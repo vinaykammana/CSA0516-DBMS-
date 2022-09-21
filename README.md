@@ -1,3 +1,3 @@
 # CSA0516-DBMS-
 ## EXPERIMENT 1:
-DDL commands -(create,alter,drop) -()
+DDL commands -(create,alter,drop) -(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%201%3B.txt)
