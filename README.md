@@ -13,3 +13,5 @@ select with various clause-(where,pattern matching)-(https://github.com/vinaykam
 select with various clause-(between,in,aggregate function)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%206.txt)
 ## EXPERIMENT 7;
 select with various clause-(group by,having,orderby)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%207.txt)
+## experiment 8;
+case scenario sqo queries implementation for book publishing company-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2022.txt)
