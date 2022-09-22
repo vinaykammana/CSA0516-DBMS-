@@ -10,4 +10,4 @@ DML commands -(update ,delete)-(https://github.com/vinaykammana/CSA0516-DBMS-/bl
 ## EXPERIMENT 5;
 select with various clause-(where,pattern matching)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%205.txt)
 ## EXPERIMENT 6;
-select with various clause-(between,in,aggregate function)-()
+select with various clause-(between,in,aggregate function)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%206.txt)
