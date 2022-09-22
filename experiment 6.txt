@@ -1,0 +1,73 @@
+mysql> select * from shopping
+    -> where item in ('food','car');
++-------+------+-------+-------+---------+
+| place | item | price | offer | payment |
++-------+------+-------+-------+---------+
+| goa   | food |     2 |     5 |       8 |
+| and   | car  |     1 |     2 |       6 |
++-------+------+-------+-------+---------+
+2 rows in set (0.03 sec)
+
+mysql> select * from shopppig
+    -> where item BETWEEN 'food' AND 'car';
++-----------+------+---------+--------------+----------+
+| place     | item  | price | offer         | payment  |
++-----------+------+---------+--------------+----------+
+| goa       | food  | 2     |   5           |  8       |
+| ind       | cloth | 3     |   9           |  12      |
+| and       |   car | 1     |   2           |   6      |
++-----------+------+---------+--------------+----------+
+3 rows in set (0.00 sec)
+
+mysql>  select * from shopping
+    ->  where item NOT BETWEEN 'food' AND 'car';
++--------+------+---------+--------------+----------+
+|place   | item |price    |offer         |payment   |
++--------+------+---------+--------------+----------+
+| ind|   |cloth | 3       | 2            | 12       |
++--------+------+---------+--------------+----------+
+1 row in set (0.00 sec)
+
+mysql> select count(price) from shopping;
+ERROR 1054 (42S22): Unknown column 'price' in 'field list'
+mysql>  select count(payment) from shopping;
++------------+
+| count(12)  |
++------------+
+|          3 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select sum(shopping)as total_sum from shopping;
+ERROR 1054 (42S22): Unknown column 'shopping' in 'field list'
+mysql>  select sum(price)as total_sum from shopping;
++-----------+
+| total_sum |
++-----------+
+|       3   |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> select max(price) from shopping;
++----------+
+| max(price)|
++----------+
+|       3  |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select min(price) from shopping;
++----------+
+| min(price)|
++----------+
+|       1  |
++----------+
+1 row in set (0.00 sec)
+
+mysql> select avg(price) from shopping;
++----------+
+| avg(price)|
++----------+
+|  10.0000  |
++----------+
+1 row in set (0.00 sec)
