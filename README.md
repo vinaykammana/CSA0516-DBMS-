@@ -16,4 +16,4 @@ select with various clause-(group by,having,orderby)-(https://github.com/vinayka
 ## experiment 22;
 case scenario sqo queries implementation for book publishing company-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2022.txt)
 ## EXPERIMENT 8;
-subquery &correlated query-()
+subquery &correlated query-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%208.txt)
