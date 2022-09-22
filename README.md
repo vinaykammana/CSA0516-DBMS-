@@ -31,3 +31,5 @@ database connectivity-(using java & ms access)-(https://github.com/vinaykammana/
 case scenario sql queries implementation for general hospital-(https://github.com/vinaykammana/CSA0516DBMS-/blob/main/experiment%2023%3B.txt)
 ## EXPERIMENT 24;
 case scenario sql queries implementation for car rental company-(https://github.com/vinaykammana/CSA0516DBMS-/blob/main/experiment%2024%3B.txt)
+## EXPERIMENT 25;
+sql queries implementation for student progress monitering system-(https://github.com/vinaykammana/CSA0516DBMS-/blob/main/experiment%2025%20%3B.txt)
