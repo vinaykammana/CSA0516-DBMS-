@@ -17,3 +17,5 @@ select with various clause-(group by,having,orderby)-(https://github.com/vinayka
 case scenario sqo queries implementation for book publishing company-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2022.txt)
 ## EXPERIMENT 8;
 subquery &correlated query-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%208.txt)
+## EXPEIMENT 9;
+joins-(equijoin,innerjoin,outerjoin)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%209.txt)
