@@ -23,3 +23,5 @@ joins-(equijoin,innerjoin,outerjoin)-(https://github.com/vinaykammana/CSA0516-DB
 VIEW,INDEX,SEQUENCE -(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2010.txt)
 ## EXPRIMENT 13;
 TCL commands-(commit,rollback,savepoint)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2013%3B.txt)
+## EXPERIMENT 19;
+database connectivity -(using php & mysql)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2019%3B.txt)
