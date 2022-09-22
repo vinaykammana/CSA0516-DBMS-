@@ -1,0 +1,85 @@
+mysql> crate table bookpublisher(bookid int(10),bookname char(20),auther char(20),cost int(20));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'crate table bookpublisher(bookid int(10),bookname char(20),auther char(20),cost ' at line 1
+mysql>  create table bookpublisher(bookid int(10),bookname char(20),auther char(20),cost int(20));
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> desc bookpublisher;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| bookid   | int(10)  | YES  |     | NULL    |       |
+| bookname | char(20) | YES  |     | NULL    |       |
+| auther   | char(20) | YES  |     | NULL    |       |
+| cost     | int(20)  | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+
+mysql> insert into bookpublisher values(100, 'maths','ram',400),(20,'brave world','aldous',150),(40,'alice','lewis',450),(90,'passage','forster',600);
+Query OK, 4 rows affected (0.06 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> select * from bookpublisher;
++--------+-------------+---------+------+
+| bookid | bookname    | auther  | cost |
++--------+-------------+---------+------+
+|    100 | maths       | ram     |  400 |
+|     20 | brave world | aldous  |  150 |
+|     40 | alice       | lewis   |  450 |
+|     90 | passage     | forster |  600 |
++--------+-------------+---------+------+
+4 rows in set (0.00 sec)
+
+mysql> alter table bookpublisher add(customer char(20));
+Query OK, 4 rows affected (0.27 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+mysql> select * from publisher;
+ERROR 1146 (42S02): Table 'vinayre12.publisher' doesn't exist
+mysql> select * from bookpublisher;
++--------+-------------+---------+------+----------+
+| bookid | bookname    | auther  | cost | customer |
++--------+-------------+---------+------+----------+
+|    100 | maths       | ram     |  400 | NULL     |
+|     20 | brave world | aldous  |  150 | NULL     |
+|     40 | alice       | lewis   |  450 | NULL     |
+|     90 | passage     | forster |  600 | NULL     |
++--------+-------------+---------+------+----------+
+4 rows in set (0.00 sec)
+
+mysql> update bookpublisher set customer=vinay where author='alice';
+ERROR 1054 (42S22): Unknown column 'author' in 'where clause'
+mysql>  update bookpublisher set customer=vinay where author='lewis';
+ERROR 1054 (42S22): Unknown column 'author' in 'where clause'
+mysql>  update bookpublisher set customer=vinay where auther='lewis';
+ERROR 1054 (42S22): Unknown column 'vinay' in 'field list'
+mysql> update bookpublisher set customer='vinay' where auther='lewis';
+Query OK, 1 row affected (0.07 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from bookpublisher;
++--------+-------------+---------+------+----------+
+| bookid | bookname    | auther  | cost | customer |
++--------+-------------+---------+------+----------+
+|    100 | maths       | ram     |  400 | NULL     |
+|     20 | brave world | aldous  |  150 | NULL     |
+|     40 | alice       | lewis   |  450 | vinay    |
+|     90 | passage     | forster |  600 | NULL     |
++--------+-------------+---------+------+----------+
+4 rows in set (0.00 sec)
+
+mysql> delete from bookpublishere where auther='ram';
+ERROR 1146 (42S02): Table 'vinayre12.bookpublishere' doesn't exist
+mysql> delete from bookpublisher where auther='ram';
+Query OK, 1 row affected (0.08 sec)
+
+mysql> select * from bookpublisher;
++--------+-------------+---------+------+----------+
+| bookid | bookname    | auther  | cost | customer |
++--------+-------------+---------+------+----------+
+|     20 | brave world | aldous  |  150 | NULL     |
+|     40 | alice       | lewis   |  450 | vinay    |
+|     90 | passage     | forster |  600 | NULL     |
++--------+-------------+---------+------+----------+
+3 rows in set (0.00 sec)
+
+mysql>
