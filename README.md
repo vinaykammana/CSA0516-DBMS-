@@ -39,3 +39,5 @@ database connectivity (java and ms access)-(https://github.com/vinaykammana/CSA0
 simple programing using(case,if,iterte,leave,loop)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2011%3B.txt)
 ## EXPERIMENT 14;
 DCL commands-(grant,revoke)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2014%3B.txt)
+## EXPERIMENT 17;
+high level programming extensions(cursors)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2017%3B.txt)
