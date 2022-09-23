@@ -46,4 +46,4 @@ high level programming extensions(procedures)-(https://github.com/vinaykammana/C
 ## EXPERIMENT 20;
 database connetivity (using java & mysql)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2020%3B.txt)
 ## EXPERIMENT 18;
-high level programming extensions -trigger()
+high level programming extensions -trigger(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2018%3B.txt)
