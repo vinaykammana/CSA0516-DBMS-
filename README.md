@@ -44,4 +44,6 @@ high level programming extensions(cursors)-(https://github.com/vinaykammana/CSA0
 ## EXPERIMENT 15;
 high level programming extensions(procedures)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2015%3B.txt)
 ## EXPERIMENT 20;
-datavbase connetivity (using java & mysql)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2020%3B.txt)
+database connetivity (using java & mysql)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2020%3B.txt)
+## EXPERIMENT 18;
+high level programming extensions -trigger()
