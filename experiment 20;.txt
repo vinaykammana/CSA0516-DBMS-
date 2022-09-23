@@ -1,0 +1,68 @@
+mysql>  create table employee1(fname char(10),mint char(10),lname char(10),ssn int(15),bdate date,address char(20),sex char(5),salary int(25),superssn int(20),dno int(5));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc employee1;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| fname    | char(10) | YES  |     | NULL    |       |
+| mint     | char(10) | YES  |     | NULL    |       |
+| lname    | char(10) | YES  |     | NULL    |       |
+| ssn      | int(15)  | YES  |     | NULL    |       |
+| bdate    | date     | YES  |     | NULL    |       |
+| address  | char(20) | YES  |     | NULL    |       |
+| sex      | char(5)  | YES  |     | NULL    |       |
+| salary   | int(25)  | YES  |     | NULL    |       |
+| superssn | int(20)  | YES  |     | NULL    |       |
+| dno      | int(5)   | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+10 rows in set (0.01 sec)
+mysql> select sum(salary)as total_sum from employee1;
++-----------+
+| total_sum |
++-----------+
+|    126000 |
++-----------+
+1 row in set (0.00 sec)
+
+mysql> select max(salary) from employee1;
++-------------+
+| max(salary) |
++-------------+
+|       50000 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select min(salary) from employee1;
++-------------+
+| min(salary) |
++-------------+
+|        6000 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select avg(salary) from employee1;
++-------------+
+| avg(salary) |
++-------------+
+|  25200.0000 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> update employee1 set lname=govardhan where mint='divya';
+ERROR 1054 (42S22): Unknown column 'govardhan' in 'field list'
+mysql>  update employee1 set lname='govardhan' where mint='divya';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from employee1;
++---------+-----------+-----------+------+------------+-----------+------+--------+----------+------+
+| fname   | mint      | lname     | ssn  | bdate      | address   | sex  | salary | superssn | dno  |
++---------+-----------+-----------+------+------------+-----------+------+--------+----------+------+
+| modi    | pushpa    | raj       | 4562 | 2026-06-04 | nellore   | m    |  50000 |    25641 |   10 |
+| kammana | vinay     | reddy     | 1265 | 2031-05-04 | chittoor  | m    |  10000 |    58746 |   56 |
+| nooka   | govardhan | royal     | 3654 | 2001-08-06 | banglore  | m    |   6000 |    36521 |    5 |
+| nooka   | mahesh    | royal     | 2564 | 2013-04-03 | hyderabad | m    |  45000 |    78561 |    3 |
+| nooka   | divya     | govardhan | 1453 | 2027-11-02 | dubai     | f    |  15000 |    24651 |   34 |
++---------+-----------+-----------+------+------------+-----------+------+--------+----------+------+
+5 rows in set (0.00 sec)
