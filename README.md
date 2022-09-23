@@ -35,3 +35,5 @@ SIMPLE programming using(repeat,while)-(https://github.com/vinaykammana/CSA0516-
 database connectivity (php & MYSQL)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2019.txt)
 ## EXPERIMENT 21;
 database connectivity (java and ms access)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2021.txt)
+## EXPERIMENT 11;
+simple programing using(case,if,iterte,leave,loop)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2011%3B.txt)
