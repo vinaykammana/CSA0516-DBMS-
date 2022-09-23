@@ -31,3 +31,5 @@ case scenario sql queries implementation for car rental company-(https://github.
 sql queries implementation for student progress monitering system-(https://github.com/vinaykammana/CSA0516DBMS-/blob/main/experiment%2025%20%3B.txt)
 ## EXPERIMENT 12;
 SIMPLE programming using(repeat,while)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2012%20%3B.txt)
+## EXPERIMENT 19;
+database connectivity (php & MYSQL)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2019.txt)
