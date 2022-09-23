@@ -1,0 +1,27 @@
+mysql> select * from customer;
++------+----------+------------+-----------+
+| id   | name     | address    | city      |
++------+----------+------------+-----------+
+|   44 | vinay    | lb nagar   | hyd       |
+|   35 | praneeth | nagarkunta | shabad    |
+|   23 | uday     | chennai    | tamilnadu |
++------+----------+------------+-----------+
+3 rows in set (0.00 sec)
+
+mysql> DELIMITER //
+mysql> CREATE PROCEDURE p_cust ()
+    -> BEGIN
+    -> SELECT id, name
+    -> FROM customer
+    -> WHERE city = 'hyd';
+    -> END //
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> DELIMITER ;
+mysql> CALL p_cust();
++------+---------+
+| id   | name    |
++------+---------+
+|   44 | sridhar |
++------+---------+
+1 row in set (0.10 sec)
