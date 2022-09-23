@@ -1,0 +1,226 @@
+mysql> show tables;
++---------------+
+| Tables_in_ram |
++---------------+
+| bd            |
+| department    |
+| faculty       |
+| library       |
+| marks         |
+| marks_view    |
+| order_idems   |
+| persons       |
+| product       |
+| std           |
+| student       |
+| test          |
++---------------+
+12 rows in set (0.00 sec)
+
+mysql> select * from bd;
++---------+-------+
+| names   | marks |
++---------+-------+
+| Raghu   |     9 |
+| Krishna |     7 |
+| Ram     |     8 |
+| Ruchi   |    10 |
+| jack    |     6 |
+| zack    |     8 |
+| burno   |     9 |
+| suma    |     5 |
++---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> select @@autocommit;
++--------------+
+| @@autocommit |
++--------------+
+|            1 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> insert into bd values ('Chandra',7);
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select * from bd;
++---------+-------+
+| names   | marks |
++---------+-------+
+| Raghu   |     9 |
+| Krishna |     7 |
+| Ram     |     8 |
+| Ruchi   |    10 |
+| jack    |     6 |
+| zack    |     8 |
+| burno   |     9 |
+| suma    |     5 |
+| Chandra |     7 |
++---------+-------+
+9 rows in set (0.00 sec)
+
+mysql> set autocommit=0;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> select @@autocommit;
++--------------+
+| @@autocommit |
++--------------+
+|            0 |
++--------------+
+1 row in set (0.01 sec)
+
+mysql> delete from bd where marks=7;
+Query OK, 2 rows affected (0.00 sec)
+
+mysql> select * from bd;
++-------+-------+
+| names | marks |
++-------+-------+
+| Raghu |     9 |
+| Ram   |     8 |
+| Ruchi |    10 |
+| jack  |     6 |
+| zack  |     8 |
+| burno |     9 |
+| suma  |     5 |
++-------+-------+
+7 rows in set (0.00 sec)
+
+mysql> rollback;
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> select * from bd;
++---------+-------+
+| names   | marks |
++---------+-------+
+| Raghu   |     9 |
+| Krishna |     7 |
+| Ram     |     8 |
+| Ruchi   |    10 |
+| jack    |     6 |
+| zack    |     8 |
+| burno   |     9 |
+| suma    |     5 |
+| Chandra |     7 |
++---------+-------+
+9 rows in set (0.00 sec)
+
+mysql> set autocommit=1;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select @@autocommit;
++--------------+
+| @@autocommit |
++--------------+
+|            1 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> select * from bd;
++---------+-------+
+| names   | marks |
++---------+-------+
+| Raghu   |     9 |
+| Krishna |     7 |
+| Ram     |     8 |
+| Ruchi   |    10 |
+| jack    |     6 |
+| zack    |     8 |
+| burno   |     9 |
+| suma    |     5 |
+| Chandra |     7 |
++---------+-------+
+9 rows in set (0.00 sec)
+
+mysql> delete from bd where marks=7;
+Query OK, 2 rows affected (0.05 sec)
+
+mysql> select * from bd;
++-------+-------+
+| names | marks |
++-------+-------+
+| Raghu |     9 |
+| Ram   |     8 |
+| Ruchi |    10 |
+| jack  |     6 |
+| zack  |     8 |
+| burno |     9 |
+| suma  |     5 |
++-------+-------+
+7 rows in set (0.00 sec)
+
+mysql> rollback;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from bd;
++-------+-------+
+| names | marks |
++-------+-------+
+| Raghu |     9 |
+| Ram   |     8 |
+| Ruchi |    10 |
+| jack  |     6 |
+| zack  |     8 |
+| burno |     9 |
+| suma  |     5 |
++-------+-------+
+7 rows in set (0.00 sec)
+
+mysql> savepoint a;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from bd;
++-------+-------+
+| names | marks |
++-------+-------+
+| Raghu |     9 |
+| Ram   |     8 |
+| Ruchi |    10 |
+| jack  |     6 |
+| zack  |     8 |
+| burno |     9 |
+| suma  |     5 |
++-------+-------+
+7 rows in set (0.00 sec)
+
+mysql> insert into bd values('chandra',7);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> savepoint b;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from bd;
++---------+-------+
+| names   | marks |
++---------+-------+
+| Raghu   |     9 |
+| Ram     |     8 |
+| Ruchi   |    10 |
+| jack    |     6 |
+| zack    |     8 |
+| burno   |     9 |
+| suma    |     5 |
+| chandra |     7 |
++---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> delete from bd where marks=10;
+Query OK, 1 row affected (0.03 sec)
+
+mysql> savepoint c;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from bd;
++---------+-------+
+| names   | marks |
++---------+-------+
+| Raghu   |     9 |
+| Ram     |     8 |
+| jack    |     6 |
+| zack    |     8 |
+| burno   |     9 |
+| suma    |     5 |
+| chandra |     7 |
++---------+-------+
+7 rows in set (0.00 sec)
