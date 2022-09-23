@@ -37,3 +37,5 @@ database connectivity (php & MYSQL)-(https://github.com/vinaykammana/CSA0516-DBM
 database connectivity (java and ms access)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2021.txt)
 ## EXPERIMENT 11;
 simple programing using(case,if,iterte,leave,loop)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2011%3B.txt)
+## EXPERIMENT 14;
+DCL commands-(grant,revoke)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2014%3B.txt)
