@@ -23,10 +23,6 @@ joins-(equijoin,innerjoin,outerjoin)-(https://github.com/vinaykammana/CSA0516-DB
 VIEW,INDEX,SEQUENCE -(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2010.txt)
 ## EXPRIMENT 13;
 TCL commands-(commit,rollback,savepoint)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2013%3B.txt)
-## EXPERIMENT 19;
-database connectivity -(using php & mysql)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2019%3B.txt)
-## EXPERIMENT 21;
-database connectivity-(using java & ms access)-(https://github.com/vinaykammana/CSA0516-DBMS-/blob/main/experiment%2021%3B.txt)
 ## EXPERIMENT 23;
 case scenario sql queries implementation for general hospital-(https://github.com/vinaykammana/CSA0516DBMS-/blob/main/experiment%2023%3B.txt)
 ## EXPERIMENT 24;
